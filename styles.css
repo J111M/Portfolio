@@ -97,7 +97,7 @@ footer, header, hgroup, menu, nav, section {
 
 /* Portfolio styles */
 
-.portfolio-items-wrapper{
+.portfolio-items-wrapper, .button{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -165,7 +165,7 @@ p{
 
 /* fade */
 
-p, h1, h2, .portfolio-items-wrapper {
+p, h1, h2, .portfolio-items-wrapper, .button{
     animation: fadeIn ease 5s;
     -webkit-animation: fadeIn ease 5s;
     -moz-animation: fadeIn ease 5s;
@@ -215,3 +215,6 @@ p, h1, h2, .portfolio-items-wrapper {
     100% {
       opacity:1;
   }
+}
+
+
