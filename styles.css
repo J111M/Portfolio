@@ -47,6 +47,14 @@ footer, header, hgroup, menu, nav, section {
 
 
 /* Nav styles */
+ul{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
 .container{
   background: black;
 }
@@ -148,7 +156,13 @@ footer, header, hgroup, menu, nav, section {
     filter: brightness(10%);
 }
 
+.welcome-text{
+  height: 20%;
+}
+
 /* Basic */
+
+
 
 h1, h2 {
     height: 10%;
@@ -163,14 +177,15 @@ p{
     text-align: center;
 }
 
+
 /* fade */
 
 p, h1, h2, .portfolio-items-wrapper, .button{
-    animation: fadeIn ease 5s;
-    -webkit-animation: fadeIn ease 5s;
-    -moz-animation: fadeIn ease 5s;
-    -o-animation: fadeIn ease 5s;
-    -ms-animation: fadeIn ease 5s;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
   }
   @keyframes fadeIn {
     0% {
