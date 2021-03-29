@@ -2150,6 +2150,12 @@ input, select, textarea {
 /* Section/Article */
 
 	section.special, article.special {
+
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		min-height: 100vh;
+		position: relative;
+		text-align: center;
+		z-index: 21;
 		text-align: center;
 	}
 
@@ -2524,6 +2530,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		background-image: url("images/overlay.png");
+		opacity: 0.5;
 		width: 100%;
 		height: 100%;
 		z-index: 1;
