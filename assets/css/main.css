@@ -748,12 +748,20 @@ input, select, textarea {
 			margin-left: 25%;
 		}
 
+		.row > .col-3half {
+			width: 28%;
+		}
+
 		.row > .col-4 {
 			width: 33.33333%;
 		}
 
 		.row > .off-4 {
 			margin-left: 33.33333%;
+		}
+
+		.row > .col-4half {
+			width: 37.66667%;
 		}
 
 		.row > .col-5 {
@@ -770,6 +778,10 @@ input, select, textarea {
 
 		.row > .off-6 {
 			margin-left: 50%;
+		}
+
+		.row > .col-6half {
+			width: 54%;
 		}
 
 		.row > .col-7 {
@@ -2364,7 +2376,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #e44c65;
+			border-color: #4ce46d;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2862,15 +2874,15 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #e44c65;
-			color: #e44c65 !important;
+			box-shadow: inset 0 0 0 1px #4ce460c0;
+			color: #4ce472 !important;
 		}
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(228, 76, 101, 0.15);
+			background-color: rgba(76, 228, 84, 0.15);
 		}
 
 		input[type="submit"].icon:before,
@@ -2905,7 +2917,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #e44c65;
+			background-color: #4ce459;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2914,14 +2926,14 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #e76278;
+				background-color: #62e769;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #e13652;
+				background-color: #3ce136;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3209,7 +3221,7 @@ input, select, textarea {
 	}
 
 		.wrapper.style2 {
-			background: #e44c65;
+			background: #4ce454;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3244,7 +3256,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="button"].primary,
 			.wrapper.style2 .button.primary {
 				background-color: #ffffff;
-				color: #e44c65 !important;
+				color: #4ce47f !important;
 			}
 
 				.wrapper.style2 input[type="submit"].primary:hover, .wrapper.style2 input[type="submit"].primary:active,
@@ -3534,6 +3546,252 @@ input, select, textarea {
 				}
 
 	body.is-touch #banner {
+		background-attachment: scroll;
+	}
+
+/* Banner2 */
+
+	#banner2 {
+		background-attachment: fixed;
+		background-color: #272833;
+		background-image: url("../../images/VRRoom_Portfolio.PNG");
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		min-height: 100vh;
+		position: relative;
+		text-align: center;
+		z-index: 21;
+	}
+
+		#banner2:before {
+			content: '';
+			display: inline-block;
+			height: 100vh;
+			vertical-align: middle;
+			width: 1%;
+		}
+
+		#banner2:after {
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85)), url("im");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#banner2 .content {
+			display: inline-block;
+			margin-right: 1%;
+			max-width: 95%;
+			padding: 6em;
+			position: relative;
+			text-align: right;
+			vertical-align: middle;
+			z-index: 1;
+		}
+
+			#banner2 .content header {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+				#banner2 .content header h2 {
+					font-size: 2.5em;
+					margin: 0;
+				}
+
+				#banner2 .content header p {
+					margin: 0.5em 0 0 0;
+					top: 0;
+				}
+
+			#banner2 .content .image {
+				border-radius: 100%;
+				display: inline-block;
+				height: 18em;
+				margin-left: 3em;
+				vertical-align: middle;
+				width: 18em;
+			}
+
+				#banner2 .content .image img {
+					border-radius: 100%;
+					display: block;
+					width: 100%;
+				}
+
+	body.is-touch #banner2 {
+		background-attachment: scroll;
+	}
+
+/* Banner3 */
+
+	#banner3 {
+		background-attachment: fixed;
+		background-color: #272833;
+		background-image: url("../../images/ActiveRagdoll.PNG");
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		min-height: 100vh;
+		position: relative;
+		text-align: center;
+		z-index: 21;
+	}
+
+		#banner3:before {
+			content: '';
+			display: inline-block;
+			height: 100vh;
+			vertical-align: middle;
+			width: 1%;
+		}
+
+		#banner3:after {
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85)), url("im");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#banner3 .content {
+			display: inline-block;
+			margin-right: 1%;
+			max-width: 95%;
+			padding: 6em;
+			position: relative;
+			text-align: right;
+			vertical-align: middle;
+			z-index: 1;
+		}
+
+			#banner3 .content header {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+				#banner3 .content header h2 {
+					font-size: 2.5em;
+					margin: 0;
+				}
+
+				#banner3 .content header p {
+					margin: 0.5em 0 0 0;
+					top: 0;
+				}
+
+			#banner3 .content .image {
+				border-radius: 100%;
+				display: inline-block;
+				height: 18em;
+				margin-left: 3em;
+				vertical-align: middle;
+				width: 18em;
+			}
+
+				#banner3 .content .image img {
+					border-radius: 100%;
+					display: block;
+					width: 100%;
+				}
+
+	body.is-touch #banner3 {
+		background-attachment: scroll;
+	}
+
+/* Banner4 */
+
+	#banner4 {
+		background-attachment: fixed;
+		background-color: #272833;
+		background-image: url("../../images/Portfolio/BulletHellPicturebgR.png");
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		min-height: 100vh;
+		position: relative;
+		text-align: center;
+		z-index: 21;
+	}
+
+		#banner4:before {
+			content: '';
+			display: inline-block;
+			height: 100vh;
+			vertical-align: middle;
+			width: 1%;
+		}
+
+		#banner4:after {
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85)), url("im");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.85), rgba(23, 24, 32, 0.85)), url("images/overlay.png");;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#banner4 .content {
+			display: inline-block;
+			margin-right: 1%;
+			max-width: 95%;
+			padding: 6em;
+			position: relative;
+			text-align: right;
+			vertical-align: middle;
+			z-index: 1;
+		}
+
+			#banner4 .content header {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+				#banner4 .content header h2 {
+					font-size: 2.5em;
+					margin: 0;
+				}
+
+				#banner4 .content header p {
+					margin: 0.5em 0 0 0;
+					top: 0;
+				}
+
+			#banner4 .content .image {
+				border-radius: 100%;
+				display: inline-block;
+				height: 18em;
+				margin-left: 3em;
+				vertical-align: middle;
+				width: 18em;
+			}
+
+				#banner4 .content .image img {
+					border-radius: 100%;
+					display: block;
+					width: 100%;
+				}
+
+	body.is-touch #banner4 {
 		background-attachment: scroll;
 	}
 
