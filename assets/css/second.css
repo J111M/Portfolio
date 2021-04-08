@@ -7,6 +7,13 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+::-webkit-scrollbar {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 0px;
+    background: transparent;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2393,6 +2400,82 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+/* video */
+
+.video {
+	border-radius: 4px;
+	border: 0;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+.video:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url("images/overlay.png");
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+	.video vid {
+		border-radius: 4px;
+		display: block;
+	}
+
+	.video.left {
+		float: left;
+		margin: 0 1.5em 1em 0;
+		top: 0.25em;
+	}
+
+	.video.right {
+		float: right;
+		margin: 0 0 1em 1.5em;
+		top: 0.25em;
+	}
+
+	.video.left, .video.right {
+		max-width: 40%;
+	}
+
+		.video.left vid, .video.right vid {
+			width: 100%;
+		}
+
+	.video.fit {
+		display: block;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+		.video.fit vid {
+			width: 100%;
+		}
+
+
+#videosList {
+	max-width: 600px; 
+	 overflow: hidden;
+   }
+   
+   .video {
+	 background-image: url('images/BulletHellPicture.PNG');
+	 height: 225px;
+	 width: 600px;
+	 margin-bottom: 50px;
+   }
+   
+   /* Hide Play button + controls on iOS */
+   video::-webkit-media-controls {
+	   display:none !important;
+   }
 
 /* List */
 

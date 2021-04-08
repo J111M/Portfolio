@@ -2583,6 +2583,98 @@ input, select, textarea {
 				width: 100%;
 			}
 
+/* video */
+
+.preview{
+	position: absolute;
+	bottom: -3px;
+    right: -5px;
+    width: 103%;
+    height: 103%;
+	
+	
+}
+
+.video {
+	border-radius: 4px;
+	border: 0;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.video:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url("images/overlay.png");
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+	.video vid {
+		border-radius: 4px;
+		display: block;
+	}
+
+	.video.left {
+		float: left;
+		margin: 0 1.5em 1em 0;
+		top: 0.25em;
+	}
+
+	.video.right {
+		float: right;
+		margin: 0 0 1em 1.5em;
+		top: 0.25em;
+	}
+
+	.video.left, .video.right {
+		max-width: 100%;
+	}
+
+		.video.left vid, .video.right vid {
+			width: 100%;
+		}
+
+	.video.fit {
+		display: block;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+		.video.fit vid {
+			width: 100%;
+		}
+
+
+#videosList {
+	 max-width: 600px; 
+	 overflow: hidden;
+    }
+   
+   .video1 {
+	 background-image: url('images/BulletHellPicture.PNG');
+	 padding: 113px;
+	 padding-left: -100px;
+     background-repeat: no-repeat;
+     background-size: 415px 225px;
+	 z-index: 1;
+   	}
+	
+
+	
+   
+   /* Hide Play button + controls on iOS */
+   video::-webkit-media-controls {
+	   display:none !important;
+   }
+
 /* List */
 
 	ol {

@@ -1,10 +1,10 @@
-var $infectedgp = $('.infectedgp');
+var cip = $(".video").hover( hoverVideo, hideVideo );
 
-$infectedgp.on('mouseenter', function(){
-    $infectedgp.get(0).play();
-});
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
 
-$infectedgp.on('mouseout', function(){
-    $infectedgp.get(0).pause();
-});
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}
 
